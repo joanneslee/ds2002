@@ -4,6 +4,15 @@ import json
 import requests
 import sys
 
+'''
+Documentation:
+This data processor, coordinates.py, uses Geocoding API from OpenWeatherMap. 
+It takes in user input of a city name and stores the coordinate points, latitude and longitude, 
+of up to five locations with the given city name in a JSON file, coordinate_information.json. 
+
+If an invalid city name is entered, an error message is printed. 
+'''
+
 try:
     # asks user for a city name
     input_location = input("Find the coordinates of a city! \n Enter city name: ")
